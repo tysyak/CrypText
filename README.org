@@ -1,0 +1,24 @@
+#+TITLE: CrypText
+
+* Instalación
+Iniciar un entorno virtual en la raíz del proyecto
+#+begin_src sh
+$ virtualenv .venv
+#+end_src
+
+La activamos con el siguiente comando
+#+begin_src sh
+$ source .venv/bin/activate
+#+end_src
+
+Para desactivarlo simplemente ejecutamos:
+#+begin_src sh
+$ deactivate
+#+end_src
+
+* Paquetes importantes
+** =VaderSentiment=
+Este paquete es una herramienta de análisis de sentimientos
+basada en reglas y léxico que está específicamente en
+sintonía con los sentimientos expresados en las redes
+sociales y funciona bien en textos de otros dominios.
