@@ -10,6 +10,7 @@
 - [[#instalación][Instalación]]
 - [[#paquetes-importantes][Paquetes importantes]]
   - [[#vadersentiment][VaderSentiment]]
+  - [[#tweepy][Tweepy]]
 :END:
 
 
@@ -30,8 +31,15 @@ $ deactivate
 #+end_src
 
 * Paquetes importantes
-** =VaderSentiment=
-Este paquete es una herramienta de análisis de sentimientos
-basada en reglas y léxico que está específicamente en
-sintonía con los sentimientos expresados en las redes
-sociales y funciona bien en textos de otros dominios.
+** VaderSentiment
+[[https://pypi.org/project/vaderSentiment/][VaderSentiment]] es una herramienta de análisis de sentimientos basada en reglas y léxico que está específicamente en
+sintonía con los sentimientos expresados en las redes sociales y funciona bien en textos de otros dominios.
+** Tweepy
+[[https://www.tweepy.org/][Tweepy]] es una biblioteca que nos ayuda a extraer los tweets directamente de Twitter, podemos especificar
+los hashtags específicos, usuarios, idioma, región, etc.
+
+Para este módulo se utiliza la variables del entorno =API_KEY=, =API_KEY_SECRET=, =ACCESS_TOKEN=y =ACCESS_TOKEN_SECRET=
+que nos proporciona la API de Twitter, bien se puede especificar en el archivo =$HOME/.profile= ó
+=$HOME/.xprofile=, dependendiendo del sistema operativo (en Arch Linux regularmente se usa este último).
+También se puede especificar al final del archivo [[./.venv/bin/activate][activate]] de los binarios del entorno generados en la
+sección de [[#instalación][Instalación]].
