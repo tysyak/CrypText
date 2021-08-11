@@ -16,7 +16,8 @@ class CryptoData:
 
     def _time_to_timestamp(self):
         for i in range(1,len(self.csv_list)):
-            self.csv_list[i][0] = time.mktime(time.strptime(self.csv_list[i][0], '%d.%m.%Y'))
+            self.csv_list[i][0] = time.mktime(
+                time.strptime(self.csv_list[i][0], '%d.%m.%Y'))
 
 
 
