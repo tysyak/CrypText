@@ -25,6 +25,16 @@ La activamos con el siguiente comando
 $ source .venv/bin/activate
 #+end_src
 
+Instalamos las dependencias una vez activado el entorno virtual
+1. Descargamos =pipreqs=
+#+begin_src sh
+$ pip install pipreqs
+#+end_src
+2. Instalamos las dependencias
+#+begin_src sh
+$ pip install -r requirements.txt
+#+end_src
+
 Para desactivarlo simplemente ejecutamos:
 #+begin_src sh
 $ deactivate
