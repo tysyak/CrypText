@@ -21,7 +21,8 @@ class Tweet:
             'Text',
             'Username',
             'UserFollowerCount',
-            'FavouritesCount'
+            'FavouritesCount',
+            'CreatedAt'
         ]]
         with tqdm(total=limit_tweet) as pbar:
             for tweet in tqdm(
