@@ -43,7 +43,7 @@ class Tweet:
         df = pd.DataFrame(list_to_convert)
         if path.exists(file_path):
             remove(file_path)
-            df.to_csv(file_path, index=False, header=False)
+        df.to_csv(file_path, index=False, header=False)
 
 
 if __name__ == '__main__':
