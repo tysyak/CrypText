@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+import random
 import tweepy as tw
 import pandas as pd
 from tqdm import tqdm
@@ -22,7 +22,8 @@ class Tweet:
             'Username',
             'UserFollowerCount',
             'FavouritesCount',
-            'CreatedAt'
+            'CreatedAt',
+            'score' # TODO
         ]]
         with tqdm(total=limit_tweet) as pbar:
             for tweet in tqdm(
@@ -34,7 +35,8 @@ class Tweet:
                     tweet.user.name,
                     tweet.user.followers_count,
                     tweet.user.favourites_count,
-                    tweet.created_at
+                    tweet.created_at,
+                    random.uniform(20443575.843, -13722334.1244) # TODO
                 ])
                 pbar.update(1)
         return ret
