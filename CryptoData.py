@@ -7,7 +7,7 @@ class CryptoData:
     def __init__(self) -> None:
         self.csv_list = list()
 
-    def csv_to_list(self, csv_path='tmp/bat-2020-2021.csv') -> list:
+    def csv_to_list(self, csv_path='tmp/bat-mxn-max.csv') -> list:
         df = pd.read_csv(csv_path, delimiter=',')
         self.csv_list = [list(row) for row in df.values]
         self.csv_list.insert(0, df.columns.to_list())
